@@ -1,21 +1,19 @@
 # Use official Go image
-FROM golang:latest
+FROM golang:latest AS backend
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /app/api
 
 # Copy and install dependencies
-COPY go.mod go.sum ./
-RUN go mod download
 
 # Copy the source code
 COPY . .
 
 # Build the application
-RUN go build -o hertz-app main.go
+RUN  go mod tidy &&  go build -o appdemo . && chmod +x appdemo && ./appdemo
 
 # Expose the port
 EXPOSE 8888
 
 # Run the application
-CMD ["./hertz-app"]
+#CMD ["./appdemo &"]

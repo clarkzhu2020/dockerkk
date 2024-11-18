@@ -1,11 +1,18 @@
 {
+  "name": "appdemo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "appdemo": "^1.0.0",
-    "axios": "^1.7.7",
-    "create-vue": "^3.12.1",
-    "element-plus": "^2.8.8",
-    "pinia": "^2.2.6",
-    "vite": "^5.4.11",
-    "vue": "^3.5.13"
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.10"
   }
 }
