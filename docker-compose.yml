@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   nginx:
     image: nginx:latest
@@ -56,7 +54,7 @@ services:
       - app-network
 
 volumes:
-  mysql-data:
+  data:
 
 networks:
   app-network:

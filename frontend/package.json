@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "appdemo": "^1.0.0",
+    "axios": "^1.7.7",
+    "create-vue": "^3.12.1",
+    "element-plus": "^2.8.8",
+    "pinia": "^2.2.6",
+    "vite": "^5.4.11",
+    "vue": "^3.5.13"
+  }
+}

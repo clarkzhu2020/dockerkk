@@ -15,7 +15,7 @@ COPY . .
 RUN go build -o hertz-app main.go
 
 # Expose the port
-EXPOSE 8080
+EXPOSE 8888
 
 # Run the application
 CMD ["./hertz-app"]
