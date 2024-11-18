@@ -10,7 +10,7 @@ WORKDIR /app/api
 COPY . .
 
 # Build the application
-RUN  go mod tidy &&  go build -o appdemo . && chmod +x appdemo && ./appdemo
+RUN  go mod tidy &&  go build -o appdemo . && chmod +x appdemo && ./appdemo &
 
 # Expose the port
 EXPOSE 8888
